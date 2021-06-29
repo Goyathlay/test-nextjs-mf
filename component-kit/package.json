@@ -1,0 +1,22 @@
+{
+  "name": "component-kit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000"
+  },
+  "resolutions": {
+    "webpack": "5.40.0"
+  },
+  "dependencies": {
+    "@module-federation/nextjs-mf": "2.2.0",
+    "next": "10.2.3",
+    "next-compose-plugins": "^2.2.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.2.3",
+    "babel-plugin-styled-components": "^1.12.0"
+  }
+}

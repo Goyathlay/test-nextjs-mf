@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "workspaces": ["component-kit", "shell"],
+  "scripts": {
+    "start": "concurrently \"cd component-kit; yarn dev \" \"cd shell; yarn dev \"",
+    "build": "concurrently \"cd component-kit; yarn build \" \"cd shell; yarn build\"",
+    "serve": "concurrently \"cd component-kit; yarn start \" \"cd shell; yarn start\"",
+    "postinstall": "concurrently \"cd component-kit; yarn\" \"cd shell; yarn\""
+  },
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
